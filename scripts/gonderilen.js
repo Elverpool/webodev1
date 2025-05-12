@@ -5,11 +5,6 @@
         const mesaj = params.get('message');
         const theme = params.get('theme');
 
-        // CSS dosyasını yükle
-        if (theme) {
-            document.getElementById('dynamic-theme').setAttribute('href', theme);
-        }
-
         // Bilgileri doldur
         const bilgiler = document.getElementById('bilgiler');
         bilgiler.innerHTML = `
